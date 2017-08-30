@@ -33,8 +33,7 @@ This plugin is intended to work with PostHTML. It will allow you to inject HTML 
 }
 ```
 
-A custom tag, which signifies where the HTML elements should be inserted during the build process. The name identify object
-key.
+A template tag, which signifies where the HTML elements should be inserted during the build process. The name identify object key.
 
 ```html
 <!DOCTYPE html>
@@ -42,12 +41,17 @@ key.
 <head>
   <meta charset="UTF-8">
   <title>Posthtml</title>
-  <posthtml-inject name="manifest" />
+  <!-- slot manifest -->
+  <template data-id="posthtml-inject" data-name="manifest"></template>
+  <!-- slot manifest -->
 </head>
 <body>
-<posthtml-inject name="library" />
+  <!-- slot library CDN scripts -->
+  <template data-id="posthtml-inject" data-name="library"></template>
+  <!-- slot library CDN scripts -->
 </body>
 </html>
+
 ```
 
 after build:
@@ -58,15 +62,15 @@ after build:
 <head>
   <meta charset="UTF-8">
   <title>Posthtml</title>
-
-<link href="manifest.json">
-
+  <!-- slot manifest -->
+  <link href="manifest.json">
+  <!-- slot manifest -->
 </head>
 <body>
-
-<script src="https://cdn.bootcss.com/react/15.6.1/react.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.18.1/moment.min.js"></script>
-
+  <!-- slot library CDN scripts -->
+  <script src="https://cdn.bootcss.com/react/15.6.1/react.js"></script>
+  <script src="https://cdn.bootcss.com/moment.js/2.18.1/moment.min.js"></script>
+  <!-- slot library CDN scripts -->
 </body>
 </html>
 ```
