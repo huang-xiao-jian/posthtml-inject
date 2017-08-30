@@ -1,0 +1,41 @@
+{
+  "name": "posthtml-inject",
+  "version": "0.1.0",
+  "description": "Inject tags into container.",
+  "main": "src/index.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "jest --config jest.config.js --coverage",
+    "test:watch": "jest --config jest.config.js --watch",
+    "lint": "npm-run-all -p lint:*",
+    "lint:source": "eslint --fix src/",
+    "lint:test": "eslint --fix __tests__/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bornkiller/posthtml-inject.git"
+  },
+  "keywords": [
+    "babel",
+    "plugin"
+  ],
+  "author": "bornkiller <hjj491229492@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bornkiller/posthtml-inject/issues"
+  },
+  "homepage": "https://github.com/bornkiller/posthtml-inject#README",
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.1",
+    "npm-run-all": "^4.0.2"
+  },
+  "dependencies": {}
+}
