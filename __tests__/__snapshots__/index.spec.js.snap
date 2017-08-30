@@ -7,7 +7,7 @@ exports[`posthtml inject plugin standard case 1`] = `
   <meta charset=\\"UTF-8\\">
   <title>Posthtml</title>
   <!-- slot manifest -->
-  <link href=\\"manifest.json\\">
+  <link rel=\\"manifest\\" href=\\"manifest.json\\">
   <!-- slot manifest -->
 </head>
 <body>
