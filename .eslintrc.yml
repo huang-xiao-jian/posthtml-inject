@@ -11,7 +11,7 @@ env:
   jest: true
 extends:
   - 'eslint:recommended'
-  - 'standard'
+  - 'airbnb-base'
 rules:
   indent:
     - error
@@ -23,6 +23,13 @@ rules:
   quotes:
     - error
     - single
+    - allowTemplateLiterals: true
   semi:
+    - error
+    - always
+  comma-dangle:
+    - error
+    - objects: never
+  arrow-parens:
     - error
     - always
