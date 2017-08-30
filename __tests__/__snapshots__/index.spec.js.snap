@@ -6,15 +6,15 @@ exports[`posthtml inject plugin standard case 1`] = `
 <head>
   <meta charset=\\"UTF-8\\">
   <title>Posthtml</title>
-  
-<link href=\\"manifest.json\\">
-
+  <!-- slot manifest -->
+  <link href=\\"manifest.json\\">
+  <!-- slot manifest -->
 </head>
 <body>
-
-<script src=\\"https://cdn.bootcss.com/react/15.6.1/react.js\\"></script>
-<script src=\\"https://cdn.bootcss.com/moment.js/2.18.1/moment.min.js\\"></script>
-
+  <!-- slot library CDN scripts -->
+  <script src=\\"https://cdn.bootcss.com/react/15.6.1/react.js\\"></script>
+  <script src=\\"https://cdn.bootcss.com/moment.js/2.18.1/moment.min.js\\"></script>
+  <!-- slot library CDN scripts -->
 </body>
 </html>
 "

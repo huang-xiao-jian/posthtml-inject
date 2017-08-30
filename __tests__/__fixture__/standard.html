@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Posthtml</title>
-  <posthtml-inject name="manifest" />
+  <!-- slot manifest -->
+  <template data-id="posthtml-inject" data-name="manifest"></template>
+  <!-- slot manifest -->
 </head>
 <body>
-<posthtml-inject name="library" />
+  <!-- slot library CDN scripts -->
+  <template data-id="posthtml-inject" data-name="library"></template>
+  <!-- slot library CDN scripts -->
 </body>
 </html>
