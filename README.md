@@ -8,29 +8,40 @@ This plugin is intended to work with PostHTML. It will allow you to inject HTML 
 
 ```javascript
 {
-  manifest: [
-    {
-      tag: 'link',
-      attrs: {
-        href: 'manifest.json'
+  elements: {
+    manifest: [
+      {
+        tag: 'link',
+        attrs: {
+          href: 'manifest.json'
+        }
       }
-    }
-  ],
-  library: [
-    {
-      tag: 'script',
-      attrs: {
-        src: 'https://cdn.bootcss.com/react/15.6.1/react.js'
+    ],
+    library: [
+      {
+        tag: 'script',
+        attrs: {
+          src: 'https://cdn.bootcss.com/react/15.6.1/react.js'
+        }
+      },
+      {
+        tag: 'script',
+        attrs: {
+          src: 'https://cdn.bootcss.com/moment.js/2.18.1/moment.min.js'
+        }
       }
-    },
-    {
-      tag: 'script',
-      attrs: {
-        src: 'https://cdn.bootcss.com/moment.js/2.18.1/moment.min.js'
-      }
-    }
-  ]
+    ]
+  }
 }
+```
+
+```javascript
+posthtml([inject( /* options above*/ )])
+  .process(html)
+  .then((res) => {
+    // ....
+    // ....
+  });
 ```
 
 A template tag, which signifies where the HTML elements should be inserted during the build process. The name identify object key.
