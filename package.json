@@ -1,8 +1,8 @@
 {
   "name": "posthtml-inject",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Inject tags into container.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "precommit": "lint-staged",
     "test": "jest --config jest.config.js --coverage",
