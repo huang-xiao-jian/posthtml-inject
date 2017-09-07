@@ -1,6 +1,6 @@
 {
   "name": "posthtml-inject",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Inject tags into container.",
   "main": "lib/index.js",
   "scripts": {
