@@ -17,6 +17,11 @@ const inject = require('../lib');
 const readOptions = { encoding: 'utf8' };
 
 describe('posthtml inject plugin', () => {
+  it('should validate pass options', () => {
+    expect(() => inject()).toThrow();
+    expect(() => inject({ elements: [] })).toThrow();
+  });
+
   it('standard case', () => {
     const html = fs.readFileSync(path.resolve(__dirname, '__fixture__', 'standard.html'), readOptions);
     const exclude = 'critical';
