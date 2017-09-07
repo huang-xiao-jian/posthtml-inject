@@ -9,6 +9,10 @@ exports[`posthtml inject plugin standard case 1`] = `
   <!-- slot manifest -->
   <link rel=\\"manifest\\" href=\\"manifest.json\\">
   <!-- slot manifest -->
+
+  <!-- slot empty -->
+  <template data-id=\\"posthtml-inject\\" data-name=\\"critical\\"></template>
+  <!-- slot empty -->
 </head>
 <body>
   <!-- slot library CDN scripts -->
