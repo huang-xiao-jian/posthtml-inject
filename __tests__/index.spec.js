@@ -24,7 +24,6 @@ describe('posthtml inject plugin', () => {
 
   it('standard case', () => {
     const html = fs.readFileSync(path.resolve(__dirname, '__fixture__', 'standard.html'), readOptions);
-    const exclude = 'critical';
     const elements = {
       manifest: [
         {
@@ -51,7 +50,7 @@ describe('posthtml inject plugin', () => {
       ]
     };
 
-    return posthtml([inject({ exclude, elements })])
+    return posthtml([inject({ elements })])
       .process(html)
       .then((res) => {
         expect(res.html).toMatchSnapshot();
