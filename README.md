@@ -8,6 +8,10 @@ This plugin is intended to work with PostHTML. It will allow you to inject HTML 
 
 ```javascript
 {
+  EOL: '\n', // Optional
+  INTENT: '\s\s', // Optional,
+  matcher: 'template', // Optional, tag name to match slot
+  include: [], // Optional, default elements property, declare explicit slot to insert
   elements: {
     manifest: [
       {
@@ -44,7 +48,7 @@ posthtml([inject( /* options above*/ )])
   });
 ```
 
-A template tag, which signifies where the HTML elements should be inserted during the build process. The name identify object key.
+A matcher tag, which signifies where the HTML elements should be inserted during the build process. The name identify object key.
 
 ```html
 <!DOCTYPE html>
