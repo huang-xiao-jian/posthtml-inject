@@ -6,11 +6,14 @@
 
 This plugin is intended to work with PostHTML. It will allow you to inject HTML elements with standalone object.
 
+## Changelog
+### 0.4.2
++ use `[data-name][data-id="posthtml-inject"]` to match container to insert, ignore matcher option.
+
 ```javascript
 {
   EOL: '\n', // Optional
   INTENT: '\s\s', // Optional,
-  matcher: 'template', // Optional, tag name to match slot
   include: [], // Optional, default elements property, declare explicit slot to insert
   elements: {
     manifest: [
