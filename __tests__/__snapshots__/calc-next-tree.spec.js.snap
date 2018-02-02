@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calc-next-tree helper should normalize standard elements 1`] = `
+Array [
+  Object {
+    "attrs": Object {
+      "href": "manifest.json",
+    },
+    "tag": "link",
+  },
+  "
+  ",
+  Object {
+    "attrs": Object {
+      "href": "main.css",
+    },
+    "tag": "link",
+  },
+]
+`;

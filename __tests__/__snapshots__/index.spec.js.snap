@@ -23,3 +23,27 @@ exports[`posthtml inject plugin standard case 1`] = `
 </html>
 "
 `;
+
+exports[`posthtml inject plugin standard case without tag name limitation 1`] = `
+"<!DOCTYPE html>
+<html lang=\\"en\\">
+<head>
+  <meta charset=\\"UTF-8\\">
+  <title>Posthtml</title>
+  <!-- slot manifest -->
+  <link rel=\\"manifest\\" href=\\"manifest.json\\">
+  <!-- slot manifest -->
+
+  <!-- slot empty -->
+  <link data-id=\\"posthtml-inject\\" data-name=\\"critical\\">
+  <!-- slot empty -->
+</head>
+<body>
+<!-- slot library CDN scripts -->
+<script src=\\"https://cdn.bootcss.com/react/15.6.1/react.js\\"></script>
+  <script src=\\"https://cdn.bootcss.com/moment.js/2.18.1/moment.min.js\\"></script>
+<!-- slot library CDN scripts -->
+</body>
+</html>
+"
+`;
